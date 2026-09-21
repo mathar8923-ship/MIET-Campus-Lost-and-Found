@@ -225,7 +225,7 @@ def dashboard():
     claims=conn.execute("""SELECT claims.*,items.name AS item_name FROM claims JOIN items ON items.id=claims.item_id
                            WHERE claims.claimant_user_id=? ORDER BY claims.id DESC""",(session["user_id"],)).fetchall()
     incoming=conn.execute("""SELECT claims.*,items.name AS item_name, users.name AS claimant_account_name
-                            FROM claims JOIN items ON items.id=claims.item_id                            cd /Users/mohdathar/Desktop/Mini\ Project/campus-lost-found
+                            FROM claims JOIN items ON items.id=claims.item_id                            
                           
                             LEFT JOIN users ON users.id=claims.claimant_user_id
                             WHERE items.user_id=? ORDER BY claims.id DESC""",(session["user_id"],)).fetchall()
