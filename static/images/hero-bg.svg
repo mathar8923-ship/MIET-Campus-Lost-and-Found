@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="blob1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c9beff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#c9beff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5b4bdb" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#5b4bdb" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd9a0" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#ffd9a0" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#5b4bdb" opacity="0.10"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#f7f7ff"/>
+  <rect width="1600" height="900" fill="url(#dots)"/>
+
+  <circle cx="1300" cy="180" r="420" fill="url(#blob1)"/>
+  <circle cx="220" cy="700" r="380" fill="url(#blob2)"/>
+  <circle cx="850" cy="80" r="260" fill="url(#blob3)"/>
+  <circle cx="1500" cy="780" r="300" fill="url(#blob2)"/>
+
+  <g opacity="0.12" stroke="#5b4bdb" stroke-width="2" fill="none">
+    <path d="M0 620 C 300 560, 500 700, 800 640 S 1300 560, 1600 640"/>
+    <path d="M0 700 C 320 660, 520 780, 820 720 S 1320 640, 1600 720"/>
+  </g>
+</svg>
